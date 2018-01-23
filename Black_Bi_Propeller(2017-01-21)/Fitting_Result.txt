@@ -1,0 +1,20 @@
+Thrust = f(pwm, voltage):  
+     meanVoltage = 11.2309
+     stdVoltage = 0.2273
+     meanPwm = 1525
+     stdPwm = 231.9428
+     Linear model Poly21:
+     sf(x,y) = p00 + p10*x + p01*y + p20*x^2 + p11*x*y
+     Coefficients (with 95% confidence bounds):
+       p00 =       1.577  (1.56, 1.594)
+       p10 =       1.405  (1.377, 1.433)
+       p01 =     0.01139  (-0.01619, 0.03897)
+       p20 =      0.2806  (0.2549, 0.3062)
+       p11 =     0.03498  (0.01467, 0.0553)
+
+Torque = f(Thrust):
+     Linear model Poly1:
+     f(x) = p1*x + p2
+     Coefficients (with 95% confidence bounds):
+       p1 =     0.01228  (0.01215, 0.0124)
+       p2 =    0.001158  (0.0008715, 0.001445)
